@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  width: 100%;
 }
 
 body {
@@ -21,6 +22,9 @@ p {
   display: flex;
   flex-direction: row;
   background-color:slateblue;
+  align-items: center;
+  height: 80px;
+  padding: 10px;
 }
 
 #navBar h1 {
@@ -62,5 +66,63 @@ p {
 .subHeading {
   width: 100px;
   border-right: 2px solid black;
+  margin-right: 10px;
+  color: slateblue;
 }
+
+.projectGrid {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "project1 project1"
+  "project1 project1"
+  "project2 project3"
+  "project4 project5"
+  ;
+}
+
+#project1 {
+  grid-area: project1;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#project2 {
+  grid-area: project2;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#project3 {
+  grid-area: project3;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#project4 {
+  grid-area: project4;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#project5 {
+  grid-area: project5;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+.projectGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: slateblue;
+}
+
 
