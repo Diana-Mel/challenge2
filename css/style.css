@@ -204,6 +204,7 @@ p {
    .contact-me {
     position: relative;
     left: -100px;
+    top: 100px;
     display: flex;
     flex-direction: column;
    }
