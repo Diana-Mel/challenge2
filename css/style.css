@@ -87,6 +87,7 @@ p {
   color: slateblue;
   display: flex;
   align-items: center;
+
 }
 
 .projectGrid {
@@ -148,6 +149,7 @@ p {
   color: white;
   font-size: 30px;
   align-self: center;
+  padding: 5px 5px 5px 15px;
 }
 
 .contact-me {  
@@ -186,5 +188,8 @@ p {
      "project4"
      "project5"
      ;
+   }
+   .contact-me a {
+    display: block;
    }
  }
