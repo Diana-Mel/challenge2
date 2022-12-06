@@ -11,19 +11,21 @@ body {
 }
 
 #navBar  {
+  color: rgb(25, 9, 41);
   display: flex;
   flex-direction: row;
-  background-color:slateblue;
+  background-color:rgb(122, 105, 231);
   align-items: center;
-  height: 80px;
+  height: 100px;
   padding: 10px;
 }
 
 h1 {
   display: inline-block;
   width: fit-content;
-  font-weight: 500;
-  background-color: azure;
+  font-weight: bold;
+  width: 250px;
+  font-size: xx-large;
 }
 #navigation {
   margin-left: 40px;
@@ -31,15 +33,19 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  gap: 15px;
 }
 
 #navigation p {
-  font-size: ;
-  width: 100px;
+  color: white;
+  font-size: 20px;
+  width: 130px;
   min-height: fit-content;
   font-weight: bold;
+  border-bottom: 2px solid;
+  justify-content: center;
+  cursor: pointer; 
 }
-
 
 h2 {
   margin: 0;
@@ -48,6 +54,7 @@ h2 {
 
 p {
   margin: 0;
+  font-size: 20px;
 }
 
 .hero-banner {
@@ -59,7 +66,7 @@ p {
 
 .hero-banner h2 {
   background-color:darkslategray;
-  color: white;
+  color: rgb(238, 228, 228);
   display: flex;
   align-items:flex-end;
 }
@@ -72,8 +79,10 @@ p {
 }
 
 .subHeading {
+  font-size: 20px;
   width: 100px;
   border-right: 2px solid black;
+  padding-right: 10px;
   margin-right: 10px;
   color: slateblue;
   display: flex;
@@ -97,6 +106,8 @@ p {
 #project1 {
   grid-area: project1;
   background-image: url("../images/02-portfolio-1.jpg");
+  color: white;
+
 }
 
 #project2 {
@@ -124,7 +135,19 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
-  cursor: pointer;
+  cursor: pointer; 
+}
+
+.projectGridArea a {
+  color: white;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  display: block;
+  color: white;
+  font-size: 30px;
+  align-self: center;
 }
 
 .contact-me {  
@@ -132,6 +155,7 @@ p {
   font-size: 19px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -140,3 +164,27 @@ p {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 1000px) {
+  #navigation{
+   display: none;
+  } 
+
+ 
+ @media only screen and (max-width: 600px) {
+   .subHeading {
+     position: static;
+     margin: 20px;
+   }
+
+   .projectGrid {
+     grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+     grid-template-columns: 1fr;
+     grid-template-areas: 
+     "project1"
+     "project2"
+     "project3"
+     "project4"
+     "project5"
+     ;
+   }
+ }
