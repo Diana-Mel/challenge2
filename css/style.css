@@ -176,6 +176,12 @@ p {
    .subHeading {
      position: static;
      margin: 20px;
+     border-bottom: 2px solid black;
+   }
+
+    #about.p {
+      position: relative;
+      top: 200px;
    }
 
    .projectGrid {
@@ -189,7 +195,17 @@ p {
      "project5"
      ;
    }
-   .contact-me a {
-    display: block;
+
+   .projectGrid {
+    position: relative;
+    top: 150px; 
+   }
+
+   .contact-me {
+    position: relative;
+    left: -100px;
+    display: flex;
+    flex-direction: column;
    }
  }
+}
