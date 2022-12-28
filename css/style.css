@@ -39,7 +39,7 @@ h1 {
 }
 
 #navigation p {
-  color: black
+  color: black;
   font-size: 20px;
   width: 130px;
   min-height: fit-content;
@@ -60,7 +60,7 @@ p {
 }
 
 .hero-banner {
-  background-image: url(../images/02-portfolio-1.jpg);
+  background-image: url(../images/02-hero-bg.jpg);
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,28 +108,28 @@ p {
 
 #project1 {
   grid-area: project1;
-  background-image: url("../images/digital-marketing-meeting.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
   color: white;
 }
 
 #project2 {
   grid-area: project2;
-  background-image: url("../images/220829_GG_CHRISTMAS_recipe_tartelettes_0.jpg");
+  background-image: url("../images/02-portfolio-2.jpg");
 }
 
 #project3 {
   grid-area: project3;
-  background-image: url("../images/istockphoto-1411682102-170667a.jpg");
+  background-image: url("../images/02-portfolio-3.jpg");
 }
 
 #project4 {
   grid-area: project4;
-  background-image: url("../images/border-frame-craft-supplies-handmade-yellow-background-top-view-with-place-text-organizing-diy-craft-elements-hobby_290431-18687.jpg");
+  background-image: url("../images/02-portfolio-4.jpg");
 }
 
 #project5 {
   grid-area: project5;
-  background-image: url("../images/Rp4CjmVTbSYaCwTLzHVvpm-415-80.jpg");
+  background-image: url("../images/02-portfolio-5.jpg");
 }
 
 .projectGridArea {
@@ -174,18 +174,24 @@ p {
 
  
  @media only screen and (max-width: 600px) {
-   .subHeading {
-     position: static;
-     margin: 20px;
+  
+  .page-section{
+    margin: 5px;
+    padding: 0 50px 0 50px;
+  }
+  
+  .subHeading {
+     position: absolute;
+     border-right: 0px;
    }
 
-    #about.p {
-      position: relative;
-      bottom: 1000px;
-      left:100px;
+    .page-section p {
+      padding-top: 150px; 
    }
 
    .projectGrid {
+    padding-top: 0px;
+    margin-top: 0px;
      grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
      grid-template-columns: 1fr;
      grid-template-areas: 
@@ -202,10 +208,18 @@ p {
     top: 150px; 
    }
 
+   #contact{
+    margin-top: 130px;
+   }
+
    .contact-me {
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 150px;
+   }
+   .page-section h2 {
+    margin-top: 50px;
    }
  }
 }
